@@ -44,4 +44,4 @@ For inquiries or to request access to the code repository, please contact [Zeus 
 
 ## Original Source
 
-This project is based on an initial open-source project that can be found on [https://www.sourcecodester.com/php](URL). Please visit the original source for details regarding its licensing.
+This project is based on an initial open-source project that can be found on [https://www.sourcecodester.com](URL). Please visit the original source for details regarding its licensing.

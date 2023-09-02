@@ -57,26 +57,46 @@ if (isset($_POST['check-email'])) {
 
         if ($run_query) {
             $subject = "Password Reset Code";
-            $message = "  <h2 style='font-family:sans-serif;'>Institute of Business Science and Medical Arts</h2><hr> 
-            <h3>Teacher Evaluation System</h3>
-            <br>Your password reset code is <b style='color:green; font-size:17px; '> $code .</b>";
-            $sender = "From: ctesibsma@gmail.com -- @noreply this is a test";
+
+            // Create a stylish email template
+            $message = '
+                <html>
+                <head>
+                    <title>Password Reset Code</title>
+                </head>
+                <body style="font-family: Arial, sans-serif;">
+                    <div style="background-color: #007BFF; color: #fff; padding: 10px;">
+                        <h2 style="font-size: 24px;">[University Name]</h2>
+                        <hr>
+                        <h3 style="font-size: 20px;">Teacher Evaluation System</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <p>Your password reset code is:</p>
+                        <p style="font-size: 24px; color: green;">' . $code . '</p>
+                    </div>
+                </body>
+                </html>
+            ';
+
+            // Create the email sender
+            $sender = "From: [University Name]<zemigz007@gmail.com>\r\n";
+            $sender .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
             $mail = new PHPmailer();
             $mail->isSMTP();
-            $mail->Host = 'tls://smtp.gmail.com:587';  // Specify main and backup SMTP servers
+            $mail->Host = 'tls://smtp.gmail.com:587';
             $mail->SMTPAuth = true;
-            $mail->Username = 'ctesibsma@gmail.com';                         // Enable SMTP authentication
+            $mail->Username = 'zemigz007@gmail.com';
             $mail->Password = 'tggkcoebnruaoesk';
             $mail->SMTPSecure = 'tls';
-            // $mail->port = "587";
-            $mail->setFrom("ctesibsma@gmail.com");
-            $mail->addAddress($email);               // Name is optional                              // Set word wrap to 50 characters
-            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->setFrom('zemigz007@gmail.com', '[University Name]');
+            $mail->addAddress($email);
+            $mail->isHTML(true);
 
             $mail->Subject = 'Password Reset Code';
-            $mail->Body    = $message;
+            $mail->Body = $message;
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
             //newly added codes below
             $count = 1;
             $settime = date('Y-m-d H:i:s');
@@ -111,8 +131,8 @@ if (isset($_POST['check-email'])) {
                     } else {
                         $info = "We've sent a passwrod reset otp to your email - $email";
 
-                        if ($row['count'] == 2) 
-                         $count = 1;
+                        if ($row['count'] == 2)
+                            $count = 1;
                         if ($count == 2) $settime = date('Y-m-d H:i:s', strtotime('59 minute'));
 
                         $add_count = "UPDATE all_users SET `count` = $count ,datetimeSL = '$settime' WHERE email = '$email'";

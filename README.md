@@ -4,10 +4,10 @@
 
 ## Overview
 
-The Teacher Evaluation System is a web-based application designed to simplify the process of evaluating teachers' performance. 
+The Teacher Evaluation System is a web-based application designed to simplify the process of evaluating teachers' performance.
 It offers various features, including password reset via email, a user-friendly interface, and responsive design. Admins can easily create and distribute questionnaires to students or specific sections, and the system provides comprehensive evaluation reports, making it easy to compute rates per subject.
 
-![Dashboard](/images/dashboard.png)
+![Login Page](/readmeImg/login.png)
 
 ## Features
 
@@ -17,11 +17,13 @@ It offers various features, including password reset via email, a user-friendly 
 
 - **Admin Capabilities**: Administrators can easily create, distribute, and manage questionnaires to students or specific sections.
 
-![Admin Panel](/images/admin_panel.png)
+![Admin Panel](/readmeImg/dashboard.png)
+![Manage Questionnaires](/readmeImg/manageqs.png)
+![Subject Area](/readmeImg/subjects.png)
 
 - **Evaluation Reports**: Comprehensive evaluation reports are available, allowing for easy computation of rates per subject.
 
-![Evaluation Report](/images/evaluation_report.png)
+![Evaluation Report](/readmeImg/evalreport.png)
 
 - **Responsive UI**: The system features a responsive user interface to ensure a consistent and accessible experience across devices.
 

@@ -13,7 +13,7 @@ It offers various features, including password reset via email, a user-friendly 
 
 - **Password Reset via Email**: Users can reset their passwords by receiving a reset link via email.
 
-- **User-Friendly Interface**: The system boasts an intuitive and user-friendly design built using Bootstrap for a seamless user experience.
+- <span style="color: #007BFF;">**User-Friendly Interface**</span>: The system boasts an intuitive and user-friendly design built using Bootstrap for a seamless user experience.
 
 - **Admin Capabilities**: Administrators can easily create, distribute, and manage questionnaires to students or specific sections.
 
@@ -25,7 +25,7 @@ It offers various features, including password reset via email, a user-friendly 
 
 ![Evaluation Report](/readmeImg/evalreport.png)
 
-- **Responsive UI**: The system features a responsive user interface to ensure a consistent and accessible experience across devices.
+- <span style="color: #007BFF;">**Responsive UI**</span>: The system features a responsive user interface to ensure a consistent and accessible experience across devices.
 
 ## Requirements
 
@@ -42,7 +42,7 @@ It offers various features, including password reset via email, a user-friendly 
 
 ## Contact
 
-For inquiries or to request access to the code repository, please contact [Zeus Orilla/@callmesauce] at [zeusorilla007@gmail.com].
+For inquiries or to request access to the code repository, please contact <span style="color: #007BFF;">[Zeus Orilla/@callmesauce]</span> at <span style="color: #007BFF;">[zeusorilla007@gmail.com]</span>.
 
 ## Original Source
 

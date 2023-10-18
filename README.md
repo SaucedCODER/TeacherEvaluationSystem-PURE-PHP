@@ -1,4 +1,4 @@
-# Teacher Evaluation System [Demo Video](https://youtu.be/JJDYajTs-TU?si=f3pQGASoEkOYeFzk)
+# Teacher Evaluation System [Watch the Demo Video](https://youtu.be/JJDYajTs-TU?si=f3pQGASoEkOYeFzk)
 
 
 **Note:** This is a modified version of a teacher evaluation system originally developed during college as part of a freelance project. Please contact us if you want to fork it.

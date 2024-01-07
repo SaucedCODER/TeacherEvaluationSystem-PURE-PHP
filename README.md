@@ -10,7 +10,7 @@ It offers various features, including password reset via email, a user-friendly 
 
 ![Login Page](/readmeImg/login.png)
 
-## Features
+## Features ---
 
 - **Password Reset via Email**: Users can reset their passwords by receiving a reset link via email.
 
